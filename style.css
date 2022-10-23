@@ -1,0 +1,299 @@
+body {
+  background: url('https://i.gifer.com/Cal.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: uni sans, sans-serif;
+  height: 100%;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1350px;
+}
+
+.card {
+  box-sizing: border-box;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.4991997938889724) 0%, rgba(0,0,0,0.5024005205203326) 100%);
+  width: 300px;
+  height: max-content;
+  max-height: 90vh;
+  overflow: hidden;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  scrollbar-width: none;
+  justify-content: space-between;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header .banner {
+  width: 100%;
+  height: 60px;
+  background: #2471ed;
+}
+
+.card-header .banner-image {
+  width: 100%;
+  height: 120px;
+  background-position: center !important;
+  background-size: 100% auto !important;
+}
+
+.card-header .infos {
+  padding: 0 15px;
+}
+
+.card-header .infos .profil-logo {
+  position: absolute;
+  top: 16px;
+}
+
+.card-header .infos .profil-logo-image {
+  position: absolute;
+  top: 76px;
+}
+
+.card-header .infos .profil-logo img,
+.card-header .infos .profil-logo-image img {
+  width: 80px;
+  height: 80px;
+  border: 6px solid black;
+  border-radius: 50%;
+}
+
+.card-header .infos .profil-logo::before,
+.card-header .infos .profil-logo-image::before {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 87%;
+  height: 84%;
+  border: 6px solid #171717;
+  content: "See Profile";
+  color: #eeeeee;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.4991997938889724) 0%, rgba(0,0,0,0.5024005205203326) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  transition-duration: 0.15s;
+}
+
+.card-header .infos .profil-logo:hover::before,
+.card-header .infos .profil-logo-image:hover::before {
+  opacity: 1;
+}
+
+.card-header .infos .username {
+  color: #eeeeee;
+  margin-top: 55px;
+  margin-bottom: -23px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.card-header .infos .username span {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.card-header .infos hr {
+  border: 1px solid #000000;
+}
+
+.card-content {
+  padding: 0 15px;
+}
+
+.card-content .category-title {
+  color: #c2c2c2;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+}
+
+.card-content .about-me {
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+.card-content .about-me p {
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+.card-content .roles {
+  margin-bottom: 12px;
+}
+
+.card-content .roles .roles-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-content .roles .roles-list .role {
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.4991997938889724) 0%, rgba(0,0,0,0.5024005205203326) 100%);;
+  color: #f5f5f5;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding: 2px 6px;
+  margin-right: 4px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card-content .roles .roles-list .role .color {
+  width: 11px;
+  height: 11px;
+  background: magenta;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.card-content .note {
+  margin-bottom: 15px;
+}
+
+.card-content .note textarea {
+  border: none;
+  outline: none;
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.4991997938889724) 0%, rgba(0,0,0,0.5024005205203326) 100%);
+  width: 100%;
+  min-height: 30px;
+  color: #e0e0e0;
+  resize: none;
+  font-size: 0.7rem;
+  border-radius: 3px;
+  padding: 5px;
+  box-sizing: border-box;
+  scrollbar-width: none;
+  font-family: uni sans, sans-serif;
+}
+
+.card-content .note textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.card-content .note textarea::placeholder {
+  font-size: 0.7rem;
+}
+
+.card-content .note textarea:focus {
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.4991997938889724) 0%, rgba(0,0,0,0.5024005205203326) 100%);
+}
+
+.card-footer {
+  padding: 0 15px 15px 15px;
+}
+
+.card-footer input {
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0.4991997938889724) 0%, rgba(0,0,0,0.5024005205203326) 100%);
+  outline: none;
+  border: 1.5px solid #333333;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #eeeeee;
+  transition-duration: 0.3s;
+}
+
+.card-footer input:focus {
+  border-color: cyan;
+}
+
+@media screen and (max-width: 1400px) {
+  .card-container {
+    width: 960px;
+  }
+  .card:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .card-container {
+    width: 650px;
+  }
+  .card:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  .card-container {
+    width: 300px;
+  }
+  .card:nth-child(2) {
+    display: none;
+  }
+}
+@-webkit-keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+a {
+  text-decoration: none;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eeeeee, 0 0 20px #ffffff, 0 0 30px #000000, 0 0 40px #000000, 
+                 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #ffffff;
+  }
+  to {
+    text-shadow: 0 0 20px #eeeeee, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff, 
+                 0 0 60px #ffffff, 0 0 70px #ffffff, 0 0 80px #ffffff;
+  }
+    }
+.developer {
+  width: 20px;
+  margin-left: 90px;
+  margin-bottom: 10px;
+}
